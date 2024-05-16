@@ -1,0 +1,23 @@
+directories:
+  output: ChatGPT
+  buildResources: build
+  app: dist_electron/bundled
+files:
+  - filter:
+      - '**'
+extends: null
+asar: true
+productName: ChatGPT_By_Tukumi
+appId: com.ChatGPT_tools.Software
+copyright: Tukumi
+win:
+  icon: ./src/assets/icon/tukumi2.ico
+nsis:
+  perMachine: true
+  allowToChangeInstallationDirectory: true
+  oneClick: false
+  installerIcon: ./src/assets/icon/yao2.ico
+  installerHeaderIcon: ./src/assets/icon/yao2.ico
+  uninstallerIcon: ./src/assets/icon/wys2.ico
+  shortcutName: ChatGPT_Faker
+electronVersion: 13.6.9
